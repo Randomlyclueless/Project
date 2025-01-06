@@ -6,8 +6,8 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   role: { type: String, required: true, enum: ["admin", "user"] },
   profileImage: { type: String },
-  createAt: { type: Date, default: Date.now },
-  updateAt: { type: Date, default: Date.now },
+  createdAt: { type: Date, default: Date.now },
+  updatedAt: { type: Date, default: Date.now },
 });
 
 const User = mongoose.model("User", userSchema);

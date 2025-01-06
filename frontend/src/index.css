@@ -17,53 +17,6 @@
   overflow: hidden;
 }
 
-/* Stars */
-.star {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.8);
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-  animation: twinkle 3s infinite ease-in-out;
-}
-
-@keyframes twinkle {
-  0%,
-  100% {
-    opacity: 0.5;
-    transform: scale(0.8);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-}
-
-/* Shooting Stars */
-.shooting-star {
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
-  border-radius: 50%;
-  animation: shooting 1.5s infinite;
-}
-
-@keyframes shooting {
-  0% {
-    transform: translateX(0) translateY(0) scale(0.5);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(400px) translateY(-200px) scale(0.5);
-    opacity: 0;
-  }
-}
-
 /* Splash Screen */
 /* Splash Screen */
 .splash-screen {
@@ -81,7 +34,7 @@
   color: white;
   opacity: 1;
   visibility: visible;
-  transition: opacity 1s ease-out, visibility 1s ease-out; /* Smooth fade-out */
+  transition: opacity 3s ease-out, visibility 1s ease-out; /* Smooth fade-out */
 }
 
 .splash-screen.fade-out {
